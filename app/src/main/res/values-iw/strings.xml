@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">אסטרונאוט</string>
+    <string name="Score300">ניקוד: 300</string>
+    <string name="tapToStart">געו כדי להתחיל</string>
+    <string name="tryAgain">נסה/י שוב</string>
+    <string name="gameOver">המשחק נגמר</string>
+    <string name="astronaut">טייס חלל</string>
+    <string name="Highscores">שיאים</string>
+    <string name="start">התחל</string>
+    <string name="back">חזרה</string>
+    <string name="first_place">"מקום ראשון: "</string>
+    <string name="second_place">"מקום שני: "</string>
+    <string name="third_place">"מקום שלישי: "</string>
+    <string name="score0">ניקוד: 0</string>
+    <string name="high_score">שיא:</string>
+    <string name="instructions">געו במסך על מנת לגרום לאיש החלל לעלות, שחררו נגיעה כדי לגרום לו לרדת בחזרה</string>
+    <string name="instructions2">אספו את הכוכבים וכדור הארץ, המנעו מלגעת בחייזר!</string>
+    <string name="points30">30 נקודות</string>
+    <string name="points10">10 נקודות</string>
+    <string name="how_to_play">איך משחקים</string>
+    <string name="HardMode">רמה קשה</string>
+</resources>

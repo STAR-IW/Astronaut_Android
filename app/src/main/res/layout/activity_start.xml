@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".start"
+    android:id="@+id/layout_start"
+    android:background="@drawable/gradient_list"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintVertical_bias="0"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/astronaut_anim" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neolatina"
+        android:text="@string/astronaut"
+        android:textStyle="bold"
+        android:textSize="60dp" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:textStyle="bold|italic"
+        android:background="@drawable/button_background"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_marginTop="90dp"
+        android:onClick="startGame"/>
+    <Button
+        android:id="@+id/hardModeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/HardMode"
+        android:textStyle="bold|italic"
+        android:background="@drawable/button_background"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="startLevel2"/>
+
+    <Button
+        android:id="@+id/highscores_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Highscores"
+        android:textStyle="bold|italic"
+        android:background="@drawable/button_background"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="openHighScores"/>
+
+    <Button
+        android:id="@+id/howToPlayy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_play"
+        android:textStyle="bold|italic"
+        android:background="@drawable/button_background"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="openHowToPlay"/>
+
+
+
+
+
+
+</LinearLayout>

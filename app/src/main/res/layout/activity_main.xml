@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/space_bg"
+    tools:context=".HardMode">
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Score300"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFF"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/pauseBtn"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/ic_pause2"
+        android:onClick="pausePushed" />
+
+    <Button
+        android:id="@+id/ExitBtn"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/ic_exit_sign"
+        android:onClick="ExitToMenu"
+        tools:ignore="OnClick" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/startLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="130dp"
+            android:fontFamily="@font/hpunk"
+            android:text="@string/tapToStart"
+            android:textColor="#D1D1D6"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:id="@+id/astronaut"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/astronaut" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottiefinger"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:lottie_repeatCount="20"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintVertical_bias="0"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/fingerclick" />
+
+        <ImageView
+            android:id="@+id/earth"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/earth" />
+
+        <ImageView
+            android:id="@+id/alien"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/alien" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/star" />
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

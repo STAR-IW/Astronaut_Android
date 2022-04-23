@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layoutHighScore"
+    android:background="@drawable/gradiant1"
+    android:padding="20dp"
+    tools:context=".HighScores">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="@string/Highscores"
+        android:fontFamily="@font/hpunk"
+        android:textColor="#E4E5EF"
+        android:textSize="45sp" />
+
+
+
+
+        <TextView
+            android:id="@+id/highScoreLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/hpunk"
+            android:textColor="#D1D1D6"
+            android:textStyle="bold"
+            android:text="@string/first_place"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/highScoreLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/highScoreLabel1"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/hpunk"
+            android:textColor="#D1D1D6"
+            android:textStyle="bold"
+            android:text="@string/second_place"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/highScoreLabel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/highScoreLabel2"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/hpunk"
+            android:textColor="#D1D1D6"
+            android:textStyle="bold"
+            android:text="@string/third_place"
+            android:textSize="25sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieWinners"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:lottie_repeatCount="5"
+        android:layout_marginTop="10dp"
+        app:layout_constraintVertical_bias="0"
+        android:layout_below="@id/highScoreLabel3"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        android:layout_above="@id/backBtn"
+        android:layout_marginBottom="5dp"
+        app:lottie_rawRes="@raw/winners" />
+
+
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:background="@drawable/button_background"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        android:onClick="backToStart"/>
+
+
+</RelativeLayout>

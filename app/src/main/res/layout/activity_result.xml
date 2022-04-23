@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".result"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant1"
+    android:gravity="center">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hpunk"
+        android:textColor="#D1D1D6"
+        android:text="@string/gameOver"
+        android:textSize="40sp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieUfo"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintVertical_bias="0"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/ufo" />
+
+
+
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150"
+        android:fontFamily="@font/hpunk"
+        android:textColor="#D1D1D6"
+        android:textSize="40sp"
+        android:layout_marginTop="40dp"/>
+
+
+    <TextView
+        android:id="@+id/highScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Score300"
+        android:fontFamily="@font/hpunk"
+        android:textColor="#D1D1D6"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:background="@drawable/button_background"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tryAgain"
+        android:textAllCaps="false"
+        android:onClick="tryAgain"/>
+
+
+
+
+
+</LinearLayout>

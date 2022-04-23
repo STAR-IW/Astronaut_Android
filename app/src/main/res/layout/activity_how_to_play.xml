@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant1"
+    tools:context=".HowToPlay">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_play"
+        android:paddingTop="50dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/hpunk"
+        android:textColor="#E4E5EF"
+        android:textSize="45sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/instructions"
+        android:fontFamily="@font/hpunk"
+        android:textSize="20sp"
+        android:paddingTop="30dp"
+        android:textColor="#E4E5EF"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:fontFamily="@font/hpunk"
+        android:text="@string/instructions2"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:textColor="#E4E5EF"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="20dp">
+        <TableRow
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points:"
+            android:fontFamily="@font/hpunk"
+            android:textColor="#E4E5EF"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"/>
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:src="@drawable/earth"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal:30, Hard Mode:60"
+                android:fontFamily="@font/hpunk"
+                android:textColor="#E4E5EF"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/star"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal:10, Hard Mode:20"
+                android:textColor="#E4E5EF"
+                android:fontFamily="@font/hpunk"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/alien"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gameOver"
+                android:textColor="#E4E5EF"
+
+                android:fontFamily="@font/hpunk"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"/>
+
+        </TableRow>
+
+
+
+    </TableLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:background="@drawable/button_background"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        android:onClick="backToStartFromHowToPlay"
+        />
+
+</LinearLayout>

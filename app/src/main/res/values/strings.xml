@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">astronaut</string>
+    <string name="Score300">Score:300</string>
+    <string name="tapToStart">Tap to start</string>
+    <string name="tryAgain">Try again</string>
+    <string name="astronaut">Astronaut</string>
+    <string name="Highscores">High scores</string>
+    <string name="start">START</string>
+    <string name="back">Back</string>
+    <string name="first_place">First Place:</string>
+    <string name="second_place">Second place:</string>
+    <string name="third_place">Third place:</string>
+    <string name="score0">Score: 0</string>
+    <string name="high_score">High score:</string>
+    <string name="instructions">Touch the screen to\nmake the astronaut go up,\nRelease it to make him go down</string>
+    <string name="instructions2">Collect the stars and the Earth.\nAvoid the alien!</string>
+    <string name="points30">30 points</string>
+    <string name="points10">10 Points</string>
+    <string name="gameOver">Game over</string>
+    <string name="how_to_play">How to play</string>
+    <string name="HardMode">hard mode</string>
+</resources>
